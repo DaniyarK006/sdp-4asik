@@ -5,7 +5,7 @@ INTRODUCTION
 
 The Bridge pattern is a structural design pattern that separates abstraction and its implementation so that they can be modified independently. This solves the problem of combinatorial class explosion when supporting multiple variations of functionality.
 
-Project Goal: Demonstrate the application of the Bridge pattern using a document rendering system for various formats (HTML, Markdown, Plain Text).
+Project Goal: Demonstrate the application of the Bridge pattern using a document rendering system for various formats (HTML, Markdown, Plain Text)
 
 Tasks:
 - Implement a document hierarchy (Article, Resume, Book)
@@ -71,7 +71,7 @@ Renderer markdownRenderer = new MarkdownRenderer();
 Article article = new Article(
 htmlRenderer,
 "Design Patterns",
-"John Doe",
+"Daniyar Kair",
 "Content here..."
 );
 article.render(); // Output to HTML
@@ -86,14 +86,14 @@ Example output:
 HTML format:
 ```html
 <h1>Design Patterns</h1>
-<p>Author: John Doe</p>
+<p>Author: Daniyar Kair</p>
 <p>Content here...</p>
 ```
 
 Markdown format:
 ```markdown
 # Design Patterns
-Author: John Doe
+Author: Daniyar Kair
 Content here...
 ```
 
@@ -125,13 +125,12 @@ CONCLUSION
 
 This project demonstrates the practical application of the Bridge pattern for creating a flexible document rendering system. Key achievements:
 
-✓ An extensible architecture with separation of abstraction and implementation was created.
-✓ Three document types and three output formats were implemented.
-✓ The ability to dynamically change renderers was demonstrated.
-✓ Adherence to clean code principles was demonstrated.
+An extensible architecture with separation of abstraction and implementation was created.
+Three document types and three output formats were implemented.
+The ability to dynamically change renderers was demonstrated.
+Adherence to clean code principles was demonstrated.
 
 The Bridge pattern is especially useful in systems that require supporting multiple combinations of functionality. It makes code more modular, understandable, and maintainable, which is critical for scalable applications.
 
 ---
 
-**Length:** ~400 words
