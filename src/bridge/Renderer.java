@@ -1,6 +1,6 @@
 package bridge;
 // Renderer.java
-// Implementor interface - defines an interface for implementation
+// Implementor interface - defines an interface for implementation |  IMPLEMENTOR
 public interface Renderer {
     void renderTitle(String title);
     void renderText(String text);
