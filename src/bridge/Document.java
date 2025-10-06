@@ -1,8 +1,15 @@
 package bridge;
 
-public abstract class Document {
-    public Document(Renderer renderer) {
+abstract class Document {
+    protected Renderer renderer;  // ABSTRACTION
+    
+    protected Document(Renderer renderer) {
+        this.renderer = renderer;
     }
-
+    
+    public void setRenderer(Renderer renderer) {
+        this.renderer = renderer;
+    }
+    
     public abstract void render();
 }
